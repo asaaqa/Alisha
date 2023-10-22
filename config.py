@@ -7,23 +7,23 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "10597052"))
-API_HASH = getenv("API_HASH", "2fd331fde4a6359a9cf0422cfbb4c900")
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://AsadAli:AsadAli@cluster0.3ejv7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
-LOGGER_ID = int(getenv("LOGGER_ID", "-1001631416406"))
+LOGGER_ID = int(getenv("LOGGER_ID", ""))
 
-BOT_NAME = getenv("BOT_NAME", "ALISHA MUSIC")
+BOT_NAME = getenv("BOT_NAME", "soha")
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5745099463").split())
+    map(int, getenv("OWNER_ID", "6228635168").split())
 )
     
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/FriendshipWorldGroup")
+    "SUPPORT_CHANNEL", "https://t.me/Mlze1bot")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/Sad_shayari_lovers")
+    "SUPPORT_GROUP", "https://t.me/ASAAQLIO")
 
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "9091751417000")
@@ -38,7 +38,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Team-Alisha/Alisha",
+    "https://github.com/asaaqa/Alisha",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
@@ -57,7 +57,7 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "6"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Team-Alisha/Alisha")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/asaaqa/Alisha")
 
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "bcfe26b0ebc3428882a0b5fb3e872473")
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "907c6a054c214005aeae1fd752273cc4")
